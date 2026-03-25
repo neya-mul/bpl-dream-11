@@ -3,7 +3,7 @@ import coin from "../images/Icon.png"
 export default function Navbar() {
     return (
         <div>
-            <div className=" border container mx-auto items-center flex justify-between p-3">
+            <div className="container mx-auto items-center flex justify-between p-3">
                 <div className="img ">
                     <img src={logo} alt="" />
                 </div>
