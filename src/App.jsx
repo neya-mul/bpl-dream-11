@@ -16,7 +16,7 @@ function App() {
             <Navbar></Navbar>
             <Banner></Banner>
             <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
-                <Players allPlayers={allPlayers}>
+                <Players allPlayers={allPlayers} >
 
                 </Players>
             </Suspense>
