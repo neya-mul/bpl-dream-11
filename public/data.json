@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Virat Kohli",
+        "country": "India",
+        "battingStyle": "Right-hand bat",
+        "bowlingStyle": "Right-arm medium",
+        "price": 120000,
+        "image": "https://i.ibb.co/virat-kohli.png"
+    },
+    {
+        "name": "Babar Azam",
+        "country": "Pakistan",
+        "battingStyle": "Right-hand bat",
+        "bowlingStyle": "Right-arm offbreak",
+        "price": 110000,
+        "image": "https://i.ibb.co/babar-azam.png"
+    },
+    {
+        "name": "Joe Root",
+        "country": "England",
+        "battingStyle": "Right-hand bat",
+        "bowlingStyle": "Right-arm offbreak",
+        "price": 105000,
+        "image": "https://i.ibb.co/joe-root.png"
+    },
+    {
+        "name": "Kane Williamson",
+        "country": "New Zealand",
+        "battingStyle": "Right-hand bat",
+        "bowlingStyle": "Right-arm offbreak",
+        "price": 100000,
+        "image": "https://i.ibb.co/kane-williamson.png"
+    },
+    {
+        "name": "Steve Smith",
+        "country": "Australia",
+        "battingStyle": "Right-hand bat",
+        "bowlingStyle": "Right-arm legbreak",
+        "price": 115000,
+        "image": "https://i.ibb.co/steve-smith.png"
+    },
+    {
+        "name": "Shakib Al Hasan",
+        "country": "Bangladesh",
+        "battingStyle": "Left-hand bat",
+        "bowlingStyle": "Left-arm orthodox",
+        "price": 95000,
+        "image": "https://i.ibb.co/shakib.png"
+    },
+    {
+        "name": "Ben Stokes",
+        "country": "England",
+        "battingStyle": "Left-hand bat",
+        "bowlingStyle": "Right-arm fast-medium",
+        "price": 108000,
+        "image": "https://i.ibb.co/ben-stokes.png"
+    },
+    {
+        "name": "David Warner",
+        "country": "Australia",
+        "battingStyle": "Left-hand bat",
+        "bowlingStyle": "Right-arm legbreak",
+        "price": 102000,
+        "image": "https://i.ibb.co/david-warner.png"
+    },
+    {
+        "name": "Quinton de Kock",
+        "country": "South Africa",
+        "battingStyle": "Left-hand bat",
+        "bowlingStyle": "Wicketkeeper",
+        "price": 98000,
+        "image": "https://i.ibb.co/de-kock.png"
+    },
+    {
+        "name": "Rashid Khan",
+        "country": "Afghanistan",
+        "battingStyle": "Right-hand bat",
+        "bowlingStyle": "Right-arm legbreak googly",
+        "price": 97000,
+        "image": "https://i.ibb.co/rashid-khan.png"
+    }
+]
