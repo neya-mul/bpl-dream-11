@@ -3,24 +3,24 @@ import coin from "../images/Icon.png"
 export default function Navbar() {
     return (
         <div>
-            <div className="container mx-auto items-center flex justify-between p-3">
+            <div className="container mx-auto items-center md:flex justify-between p-3">
                 <div className="img ">
-                    <img src={logo} alt="" />
+                    <img src={logo} alt="" className="mx-auto" />
                 </div>
 
-                <div>
-                    <ul className="flex gap-3.5 items-center">
+                <div className="flex gap-3">
+                    <ul className="flex gap-3.5 items-center md:mx-auto max-w-[500px] text-center mx-auto">
                         <li><a href="">Home</a></li>
                         <li><a href="">Fixture</a></li>
                         <li><a href="">Teams</a></li>
                         <li><a href="">Schedules</a></li>
-                        <button className="flex btn">
-                            0 coins
-                            <img src={coin} alt="" />
 
-                        </button>
                     </ul>
+                    <button className="flex btn">
+                        0 coins
+                        <img src={coin} alt="" />
 
+                    </button>
                 </div>
             </div>
         </div>
