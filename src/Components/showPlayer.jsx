@@ -1,4 +1,6 @@
+import { FaFlag } from "react-icons/fa6";
 
+import { FaUser } from "react-icons/fa";
 
 export default function ShowPlayer({ player }) {
     console.log(player.name);
@@ -8,14 +10,24 @@ export default function ShowPlayer({ player }) {
         <div className="card bg-base-100 w-96 shadow-sm mx-auto">
             <figure>
                 <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                    src=""
                     alt="Shoes" />
             </figure>
             <div className="card-body">
-                <h2 className="card-title">{player.name}</h2>
-                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                <div className="card-actions justify-end">
-                    <button className="btn">Buy Now</button>
+                <h2 className="card-title"> <FaUser /> {player.name}</h2>
+                <div className="flex">
+                    <p className="flex items-center gap-2"><FaFlag />{player.country}</p>
+                    <button className="btn rounded-2xl">{player.role}</button>
+                </div>
+                  <div className="divider"></div>
+
+                <div className="flex justify-between">
+                    <p>{ player.battingStyle}</p>
+                    <p>{player.bowlingStyle}</p>
+                </div>
+                <div className="card-actions justify-end items-center">
+                    <p className="font-bold">Price:{player.price}</p> 
+                    <button className="btn">Choose Player</button>
                 </div>
             </div>
         </div>
