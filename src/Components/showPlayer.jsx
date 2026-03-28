@@ -7,10 +7,11 @@ export default function ShowPlayer({ player }) {
 
     return (
 
-        <div className="card bg-base-100 w-96 shadow-sm mx-auto">
+        <div className="card bg-base-100 w-96 shadow-sm mx-auto grid">
             <figure>
                 <img
-                    src=""
+                    className="h-[250px] w-full"
+                    src={player.image}
                     alt="Shoes" />
             </figure>
             <div className="card-body">

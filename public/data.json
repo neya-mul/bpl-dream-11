@@ -5,7 +5,7 @@
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm medium",
     "price": 120000,
-    "image": "https://i.ibb.co/virat-kohli.png",
+    "image": "https://i.ibb.co.com/d0FhxDTN/mumbai-india-virat-kohli-of-india-looks-on-during-the-icc-mens-cricket-world-cup-india-2023-1.webp",
     "role": "batter"
   },
   {
@@ -14,7 +14,7 @@
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
     "price": 110000,
-    "image": "https://i.ibb.co/babar-azam.png",
+    "image": "https://i.ibb.co.com/pvq27Cd2/lauderhill-florida-babar-azam-captain-of-pakistan-looks-on-during-the-icc-mens-t20-cricket.webp",
     "role": "batter"
   },
   {
@@ -23,7 +23,7 @@
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
     "price": 105000,
-    "image": "https://i.ibb.co/joe-root.png",
+    "image": "https://i.ibb.co.com/7dkgsSBk/joe.webp",
     "role": "batter"
   },
   {
@@ -32,7 +32,7 @@
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
     "price": 100000,
-    "image": "https://i.ibb.co/kane-williamson.png",
+    "image": "https://i.ibb.co.com/wr4ZLqcs/kane.webp",
     "role": "batter"
   },
   {
@@ -41,7 +41,7 @@
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm legbreak",
     "price": 115000,
-    "image": "https://i.ibb.co/steve-smith.png",
+    "image": "https://i.ibb.co.com/hFwnyzKL/smith.webp",
     "role": "batter"
   },
   {
@@ -50,7 +50,7 @@
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Left-arm orthodox",
     "price": 95000,
-    "image": "https://i.ibb.co/shakib.png",
+    "image": "https://i.ibb.co.com/p6ZZhBcL/jaura.webp",
     "role": "allRounder"
   },
   {
@@ -59,7 +59,7 @@
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Right-arm fast-medium",
     "price": 108000,
-    "image": "https://i.ibb.co/ben-stokes.png",
+    "image": "https://i.ibb.co.com/6RbSDV7z/ben.webp",
     "role": "allRounder"
   },
   {
@@ -68,7 +68,7 @@
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Right-arm legbreak",
     "price": 102000,
-    "image": "https://i.ibb.co/david-warner.png",
+    "image": "https://i.ibb.co.com/4ZvzyBPq/warner.webp",
     "role": "batter"
   },
   {
@@ -77,7 +77,7 @@
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Wicketkeeper",
     "price": 98000,
-    "image": "https://i.ibb.co/de-kock.png",
+    "image": "https://i.ibb.co.com/272Fy4Dr/koxk.webp",
     "role": "batter"
   },
   {
@@ -86,7 +86,7 @@
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm legbreak googly",
     "price": 97000,
-    "image": "https://i.ibb.co/rashid-khan.png",
+    "image": "https://i.ibb.co.com/RLzvGsz/rashid.webp",
     "role": "allRounder"
   }
 ]
