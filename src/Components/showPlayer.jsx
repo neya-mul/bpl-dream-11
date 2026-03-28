@@ -3,7 +3,7 @@ import { FaFlag } from "react-icons/fa6";
 import { FaUser } from "react-icons/fa";
 
 export default function ShowPlayer({ player }) {
-    console.log(player.name);
+    // console.log(player.name);    
 
     return (
 
@@ -24,7 +24,7 @@ export default function ShowPlayer({ player }) {
 
                 <div className="flex justify-between">
                     <p>{ player.battingStyle}</p>
-                    <p>{player.bowlingStyle}</p>
+                    <p className="text-right">{player.bowlingStyle}</p>
                 </div>
                 <div className="card-actions justify-end items-center">
                     <p className="font-bold">Price:{player.price}</p> 

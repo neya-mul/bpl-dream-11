@@ -1,9 +1,11 @@
-import { use } from "react"
+import { use, useState } from "react"
 import ShowPlayer from "./showPlayer"
 
 
 export default function Players({ allPlayers }) {
     const players = use(allPlayers)
+    const [isSelected, setIsSelected] = useState('available')
+    console.log(isSelected)
     // console.log(players);
 
 
@@ -13,11 +15,11 @@ export default function Players({ allPlayers }) {
 
             <div className=" mx-auto container my-8 flex justify-between">
                 <div>
-                    <h1>Available Players</h1>
+                    <h1 className="text-2xl font-bold">Available Players</h1>
                 </div>
                 <div className="flex">
-                    <button className="bg-[#E7FE29] p-3 rounded-l-2xl"> Available</button>
-                    <button className="p-3 rounded-r-2xl"> Selected (0)</button>
+                    <button onClick={() => setIsSelected('available')} className={` ${isSelected === 'available' ? 'bg-[#E7FE29]' : 'bg-white'}  p-3 rounded-l-2xl btn w-[130px]`}> Available</button>
+                    <button onClick={() => setIsSelected('selected')} className={`${isSelected === 'selected' ? 'bg-[#E7FE29]' : 'bg-white'} p-3 rounded-r-2xl btn w-[130px]`}> Selected (0)</button>
                 </div>
             </div>
 
