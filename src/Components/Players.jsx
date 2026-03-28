@@ -4,10 +4,10 @@ import { hydrateRoot } from "react-dom/client"
 import Selected from "./Selected"
 
 
-export default function Players({ allPlayers }) {
+export default function Players({ allPlayers , setCoinValue, coinValue}) {
     const players = use(allPlayers)
     const [isSelected, setIsSelected] = useState('available')
-    console.log(isSelected)
+    // console.log(isSelected)
     // console.log(players);
 
 
@@ -27,7 +27,7 @@ export default function Players({ allPlayers }) {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-10">
                 {
-                  isSelected === 'available' ?  players.map(player => <ShowPlayer player={player}></ShowPlayer>) : <Selected></Selected>
+                  isSelected === 'available' ?  players.map(player => <ShowPlayer player={player} setCoinValue={setCoinValue} coinValue = {coinValue}></ShowPlayer>) : <Selected></Selected>
                 }
             </div>
 

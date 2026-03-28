@@ -1,6 +1,7 @@
 import logo from "../images/logo.png"
 import coin from "../images/Icon.png"
-export default function Navbar() {
+export default function Navbar({coinValue}) {
+    console.log(coinValue)
     return (
         <div>
             <div className="container mx-auto items-center md:flex justify-between p-3">
@@ -17,7 +18,7 @@ export default function Navbar() {
 
                     </ul>
                     <button className="flex btn">
-                        0 coins
+                        {coinValue} coins
                         <img src={coin} alt="" />
 
                     </button>

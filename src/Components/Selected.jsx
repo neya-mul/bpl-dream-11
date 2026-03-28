@@ -3,7 +3,9 @@
 export default function Selected() {
     return (
         <>
-            <h1>Neyamul</h1>
+            <div>
+                <h1>Neyamul</h1>
+            </div>
         </>
     );
 }

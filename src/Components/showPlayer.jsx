@@ -1,9 +1,27 @@
 import { FaFlag } from "react-icons/fa6";
 
 import { FaUser } from "react-icons/fa";
+import { useState } from "react";
 
-export default function ShowPlayer({ player }) {
+export default function ShowPlayer({ player, setCoinValue, coinValue }) {
     // console.log(player.name);    
+    const playerPrice = player.price
+    const newPrice = coinValue - playerPrice
+    const [isSelected, setIsSelected] = useState(false)
+    const handleChoosePlayer = () => {
+        if (newPrice >= 0) {
+            setCoinValue(coinValue - playerPrice)
+        }
+        else{
+            alert ('Not enough coin')
+            return;
+        }
+
+        alert(`${player.name} is selected`)
+        setIsSelected(true)
+
+
+    }
 
     return (
 
@@ -20,15 +38,15 @@ export default function ShowPlayer({ player }) {
                     <p className="flex items-center gap-2"><FaFlag />{player.country}</p>
                     <button className="btn rounded-2xl">{player.role}</button>
                 </div>
-                  <div className="divider"></div>
+                <div className="divider"></div>
 
                 <div className="flex justify-between">
-                    <p>{ player.battingStyle}</p>
+                    <p>{player.battingStyle}</p>
                     <p className="text-right">{player.bowlingStyle}</p>
                 </div>
                 <div className="card-actions justify-end items-center">
-                    <p className="font-bold">Price:{player.price}</p> 
-                    <button className="btn">Choose Player</button>
+                    <p className="font-bold">Price:{player.price}</p>
+                    <button onClick={() => handleChoosePlayer()} className="btn" disabled={isSelected ? true : false}>{isSelected === true ? "Selected" : "Choose Player"}</button>
                 </div>
             </div>
         </div>
