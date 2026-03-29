@@ -46,6 +46,8 @@ export default function Players({ allPlayers, setCoinValue, coinValue }) {
                     <Selected
                         selectedPlayer={selectedPlayer}
                         setSelectedPlayer={setSelectedPlayer}
+                        setCoinValue={setCoinValue}
+                        coinValue={coinValue}
                     />
                 )
             }

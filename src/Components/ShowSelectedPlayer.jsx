@@ -1,11 +1,12 @@
 import React from 'react'
 import { MdDelete } from 'react-icons/md'
 
-export default function ShowSelectedPlayer({player, selectedPlayer, setSelectedPlayer}) {
+export default function ShowSelectedPlayer({player, selectedPlayer, setSelectedPlayer, coinValue, setCoinValue}) {
   const deleteBtn =(player)=>{
     let filteredPlayer = selectedPlayer.filter(p=> p.name !== player.name)
     console.log(filteredPlayer);
     setSelectedPlayer(filteredPlayer)
+    setCoinValue(coinValue + player.price)
     
 
   }

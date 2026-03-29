@@ -3,6 +3,7 @@ import { FaFlag } from "react-icons/fa6";
 
 import { FaUser } from "react-icons/fa";
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 export default function ShowPlayer({ player, setCoinValue, coinValue, selectedPlayer, setSelectedPlayer }) {
     // console.log(player.name);    
@@ -14,11 +15,13 @@ export default function ShowPlayer({ player, setCoinValue, coinValue, selectedPl
             setCoinValue(coinValue - playerPrice)
         }
         else{
-            alert ('Not enough coin')
+            // alert ('Not enough coin')
+            toast.error('Not enough coin')
             return;
         }
 
-        alert(`${player.name} is selected`)
+        // alert(`${player.name} is selected`)
+        toast.success(`${player.name} is selected`)
         setIsSelected(true)
         setSelectedPlayer([...selectedPlayer, player])
 
