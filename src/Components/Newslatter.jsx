@@ -3,9 +3,9 @@ import banner from "../images/bg-shadow.png"
 
 export default function Newslatter() {
     return (
-        <div className="container mx-auto bg-cover md:min-h-[450px] mt-20 rounded-2xl  bg-no-repeat w-full text-center  flex justify-center items-center"
+        <div className=" max-w-[1200px] mx-auto bg-cover md:min-h-[450px] rounded-2xl  bg-no-repeat w-full text-center p-5 md:p-0  flex justify-center items-center relative md:top-60 top-10 z-10 bg-white border border-gray-200"
             style={{ backgroundImage: `url(${banner})` }}>
-            <div className='space-y-7'>
+            <div className='space-y-3'>
 
                 <h1 className='text-3xl font-bold'>Subscribe to our Newsletter</h1>
                 <p>Get the latest updates and news right in your inbox!</p>

@@ -4,6 +4,7 @@ import Banner from './Components/banner'
 import Navbar from './Components/Navbar'
 import Players from './Components/Players'
 import Newslatter from './Components/Newslatter'
+import Footer from './Components/Footer'
 
 const allPlayers = fetch('/data.json')
     .then(res => res.json())
@@ -31,6 +32,7 @@ function App() {
                 />
             </Suspense>
             <Newslatter></Newslatter>
+            <Footer></Footer>
         </>
     )
 }
