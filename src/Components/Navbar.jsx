@@ -7,6 +7,7 @@ export default function Navbar({coinValue}) {
             <div className="container mx-auto items-center md:flex justify-between p-3">
                 <div className="img ">
                     <img src={logo} alt="" className="mx-auto" />
+                    
                 </div>
 
                 <div className="flex gap-3">
