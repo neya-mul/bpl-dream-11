@@ -3,6 +3,7 @@ import './App.css'
 import Banner from './Components/banner'
 import Navbar from './Components/Navbar'
 import Players from './Components/Players'
+import Newslatter from './Components/Newslatter'
 
 const allPlayers = fetch('/data.json')
     .then(res => res.json())
@@ -16,11 +17,20 @@ function App() {
             {/* <h1>neyamul</h1> */}
             <Navbar coinValue={coinValue}></Navbar>
             <Banner></Banner>
-            <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
-                <Players allPlayers={allPlayers} setCoinValue = {setCoinValue} coinValue = {coinValue}>
-
-                </Players>
+            <Suspense
+                fallback={
+                    <div className="flex justify-center items-center min-h-screen">
+                        <span className="loading loading-spinner loading-xl"></span>
+                    </div>
+                }
+            >
+                <Players
+                    allPlayers={allPlayers}
+                    setCoinValue={setCoinValue}
+                    coinValue={coinValue}
+                />
             </Suspense>
+            <Newslatter></Newslatter>
         </>
     )
 }
