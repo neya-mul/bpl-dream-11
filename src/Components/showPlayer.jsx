@@ -1,9 +1,10 @@
+// working on it
 import { FaFlag } from "react-icons/fa6";
 
 import { FaUser } from "react-icons/fa";
 import { useState } from "react";
 
-export default function ShowPlayer({ player, setCoinValue, coinValue }) {
+export default function ShowPlayer({ player, setCoinValue, coinValue, selectedPlayer, setSelectedPlayer }) {
     // console.log(player.name);    
     const playerPrice = player.price
     const newPrice = coinValue - playerPrice
@@ -19,6 +20,7 @@ export default function ShowPlayer({ player, setCoinValue, coinValue }) {
 
         alert(`${player.name} is selected`)
         setIsSelected(true)
+        setSelectedPlayer([...selectedPlayer, player])
 
 
     }

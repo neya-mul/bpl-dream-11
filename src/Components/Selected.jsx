@@ -1,11 +1,14 @@
 
-
-export default function Selected() {
+// working on it
+export default function Selected({ selectedPlayer, setSelectedPlayer }) {
+    console.log(selectedPlayer)
     return (
-        <>
-            <div>
-                <h1>Neyamul</h1>
-            </div>
-        </>
+
+        <div className="border w-full">
+            {
+
+            }
+        </div>
+
     );
 }
